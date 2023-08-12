@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Register Form</title>
+    <link rel="stylesheet" href="style2.css">
+</header>
+
+<body>
+    <form>
+        <div>
+            <label for="company_name">Company Name: </label>
+            <input type="text" id="company_name" name="company_name" placeholder="Your Company Name" size=100%>
+        </div>
+        <div>
+            <label for="boot_size">Choose Your Boot Size: </label>
+            <select id="boot_size" name="boot_size">
+                <option value="10x10" selected>10 X 10 Feet</option>
+                <option value="10x15">10 X 15 Feet</option>
+            </select>
+        </div>
+        <div>
+            <label for="table">Table For Boot: </label>
+            <input type="checkbox" name="table" id="table" checked>
+        </div>
+        <div>
+            <label for="chair">No. of Chairs: </label>
+            <input type="text" id="chair" name="chair" placeholder="Enter Numbers of Chairs" size=100%>
+        </div>
+        <div>
+            <label for="register_name">Register Name: </label>
+            <input type="text" name="register_name" id="register_name" placeholder="Register Name" size=100%>
+        </div>
+        <div>
+            <label for="tel_register">Telephone: </label>
+            <input type="text" name="tel_register" id="tel_register" placeholder="Enter Phone Numbers" size=100%>
+        </div>
+        <input type="button" class="submit_b" value="Submit">
+    </form>
+</body>
+
+</html>
