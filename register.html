@@ -3,38 +3,52 @@
 <header>
     <title>Register Form</title>
     <link rel="stylesheet" href="style2.css">
+    <script src="script_register.js"></script>
 </header>
 
 <body>
-    <form>
+    <form name="main">
         <div>
-            <label for="company_name">Company Name: </label>
+            <label for="company_name" id="label_company_name">Company Name: </label>
             <input type="text" id="company_name" name="company_name" placeholder="Your Company Name" size=100%>
+            <br>
+            <label id="alert_company_name" class="alert"></label>
         </div>
         <div>
             <label for="boot_size">Choose Your Boot Size: </label>
+            <br>
             <select id="boot_size" name="boot_size">
-                <option value="10x10" selected>10 X 10 Feet</option>
+                <option value="default" selected>Choose your boot size</option>
+                <option value="10x10">10 X 10 Feet</option>
                 <option value="10x15">10 X 15 Feet</option>
             </select>
+            <br>
+            <label id="alert_boot_size" class="alert"></label>
         </div>
         <div>
             <label for="table">Table For Boot: </label>
+            <br>
             <input type="checkbox" name="table" id="table" checked>
         </div>
         <div>
-            <label for="chair">No. of Chairs: </label>
+            <label for="chair" id="label_for_chairs">No. of Chairs: </label>
             <input type="text" id="chair" name="chair" placeholder="Enter Numbers of Chairs" size=100%>
+            <br>
+            <label id="alert_chair" class="alert"></label>
         </div>
         <div>
-            <label for="register_name">Register Name: </label>
+            <label for="register_name" id="label_for_name">Register Name: </label>
             <input type="text" name="register_name" id="register_name" placeholder="Register Name" size=100%>
+            <br>
+            <label id="alert_name" class="alert"></label>
         </div>
         <div>
-            <label for="tel_register">Telephone: </label>
+            <label for="tel_register" id="label_for_tel">Telephone: </label>
             <input type="text" name="tel_register" id="tel_register" placeholder="Enter Phone Numbers" size=100%>
+            <br>
+            <label id="alert_tel" class="alert"></label>
         </div>
-        <input type="button" class="submit_b" value="Submit">
+        <input type="button" class="submit_b" value="Submit" onclick="check_input();">
     </form>
 </body>
 
